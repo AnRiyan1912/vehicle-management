@@ -10,16 +10,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-
-    if (Auth::check() & Auth::user()->role == 'ADMIN') {
-        return redirect()->route('admin/dashboard');
-    } else if (Auth::check() & Auth::user()->role == 'APPROVAL') {
-        return redirect()->route('approval/dashboard');
-    } else {
-        return view('welcome');
-    }
+    return view('welcome');
 });
-
 Route::middleware('auth', 'ADMIN')->group(function () {
     Route::get('admin/dashboard', [HomeController::class, 'index'])->name('admin/dashboard');
     Route::get('admin/driver', [DriverController::class, 'index'])->name('admin/driver');
