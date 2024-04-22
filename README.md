@@ -6,6 +6,9 @@ Php version: PHP 8.2.10-2ubuntu1
 
 Framework: Laravel11
 
+untuk desaign database:
+https://dbdiagram.io/d/vehicle-management-6622c76d03593b6b617721b3
+
 Penggunaan aplikasi dan hanya feature yang terselesaikan:
 
 1. User bisa registrasi mau menjadi admin ataupun approval dengan memilih role
@@ -13,4 +16,3 @@ Penggunaan aplikasi dan hanya feature yang terselesaikan:
 3. Ketika user yang login admin terdapat beberapa pilihan di navbar atau menu paling atas untuk melihat driver, vehicle, booking
 4. Admin bisa membuat booking kendaraan memilih driver, vehicle dan user approval
 5. Ketika user Approval yang login hanya bisa melihat bookingan yang masuk sesuai yang sudah di tentukan dari admin user approval nya siapa
-
