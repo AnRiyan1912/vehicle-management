@@ -31,6 +31,9 @@ class AuthenticatedSessionController extends Controller
         if ($request->user()->role == 'ADMIN') {
             return redirect('admin/dashboard');
         }
+        if ($request->user()->role == 'APPROVAl') {
+            return redirect('approval/dashboard');
+        }
 
         // return redirect()->intended(route('dashboard', absolute: false));
         return redirect()->intended(route('approval/dashboard'));
